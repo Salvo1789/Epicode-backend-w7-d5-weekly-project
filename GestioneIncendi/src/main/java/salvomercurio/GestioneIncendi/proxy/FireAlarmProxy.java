@@ -11,7 +11,7 @@ public class FireAlarmProxy implements FireAlarm {
 	}
 
 	@Override
-	public void triggerAlarm(Long id, double latitude, double longitude, double smokeLevel) {
+	public void triggerAlarm(int id, double latitude, double longitude, double smokeLevel) {
 		if (smokeLevel > 5) {
 			fireAlarm.triggerAlarm(id, latitude, longitude, smokeLevel);
 		}
